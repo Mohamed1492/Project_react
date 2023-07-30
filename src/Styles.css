@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .Logo{
+    display: flex;
+    justify-content: center;
+  }
+  .Choice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .container {
+      padding: 5px;
+    }
+  }
+  
+
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Set the desired width for the circular button */
+  height: 200px; /* Set the desired height for the circular button */
+  border-radius: 50%; /* Create a circular shape */
+  background-color: #4CAF50; /* Set the background color for the button */
+  color: white; /* Set the text color */
+  border: none; /* Remove the border */
+  cursor: pointer;
+
+  margin: 50px;
+}
+
+.btn img{
+  width: 200px; /* Set the desired width for the image */
+  height: 200px; /* Set the desired height for the image */
+
+  border-radius: 50%;
+}
+.btn span{
+  /* position: absolute; */
+  padding-left: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text vertically and horizontally */
+}
+
+.link { 
+  width: 200px;
+margin: 40px;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  margin-top: 50px;
+}
+.RESPONSE{
+  width: 200px; /* Set the desired width for the circular button */
+  height: 100px; /* Set the desired height for the circular button */
+  border-radius: 50px; /* Create a circular shape */
+  background-color: #accfcf; /* Set the background color for the button */
+  color:black; /* Set the text color */
+  border: none; /* Remove the border */
+  cursor: pointer;
+
+  margin: 10px;
+}
+.responseBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+margin-top: 10px;
+}
+
+h3{
+  text-align: center;
+}
