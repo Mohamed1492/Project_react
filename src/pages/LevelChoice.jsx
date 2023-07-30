@@ -1,11 +1,11 @@
 import DifficultyButton from "../Components/DifficultyButton"
 
 
-const LevelChoice = ({handleLevelChange}) => {
+const LevelChoice = ({handleLevel }) => {
 
   
   const handleClick = (selectedChoice) => {
-    handleLevelChange(selectedChoice);
+    handleLevel (selectedChoice);
   };
   return (
     <div className='Choice'>

@@ -11,6 +11,7 @@ const QuestionPage = ({ category, level , questionIndex,setQuestionIndex,score,s
   console.log(response.results,score);
   console.log("questionIndex",questionIndex)
 
+  const [count, setCount] = useState(0)
   const getRandomInt = (max) => {
     return Math.floor(Math.random() * Math.floor(max));
   };
@@ -38,6 +39,8 @@ const QuestionPage = ({ category, level , questionIndex,setQuestionIndex,score,s
       if (questionIndex + 1 < 3) {
         setQuestionIndex(questionIndex + 1);
       }
+      setCount(count+1)
+
     }
   await handle()
   questionIndex++
@@ -55,7 +58,7 @@ const QuestionPage = ({ category, level , questionIndex,setQuestionIndex,score,s
           <Spinner animation='border' variant='primary' />
           <h1>Loading ...</h1>
         </>
-      ) :   (questionIndex>=2) ?
+      ) :   (count===3) ?
 
         <Navigate to="/score"/>
          : (

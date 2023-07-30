@@ -46,7 +46,7 @@ function App() {
                 <div>
                   <CategoryChoice
                     handleCategory={(data) => setCategory(data)}
-                    handleLevel={(data) => setLevel(data)}
+                    
                   />
                 </div>
               }
@@ -61,13 +61,13 @@ function App() {
                   setQuestionIndex={setQuestionIndex}
                   score={score}
                   setScore={setScore}
-                  resetStates={resetStates}
                   
+
                 />
               }
             />
-            <Route path='/LevelChoice' element={<LevelChoice />} />
-            <Route path="/score" element={<Score score={score} />}/>
+            <Route path='/LevelChoice' element={<LevelChoice handleLevel={(data) => setLevel(data)} />} />
+            <Route path="/score" element={<Score score={score} resetStates={resetStates}/>}/>
           </Routes>
         </div>
       </Router>
